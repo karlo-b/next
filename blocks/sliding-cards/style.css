@@ -1,0 +1,16 @@
+.slideUp{
+	height: 0px;
+}
+
+.bg-blue .block-sliding-card__img::before{
+	background: linear-gradient(180deg, rgba(210, 231, 255, 0) 0.24%, #D2E7FF 68.55%);
+}
+.bg-peach .block-sliding-card__img::before{
+	background: linear-gradient(180deg, rgba(210, 231, 255, 0) 0.24%, #FFCFB4 68.55%);
+}
+.bg-teal .block-sliding-card__img::before{
+	background: linear-gradient(180deg, rgba(210, 231, 255, 0) 0.24%, #09CEAB 68.55%);
+}
+.bg-sky .block-sliding-card__img::before{
+	background: linear-gradient(180deg, rgba(210, 231, 255, 0) 0.24%, #BDEDFC 68.55%);
+}

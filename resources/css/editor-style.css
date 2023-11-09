@@ -1,0 +1,59 @@
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.wp-block{
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=wide] {
+    @apply max-w-screen-xl;
+}
+
+.wp-block[data-align=full] {
+    @apply max-w-full;
+}
+
+.tile {
+	cursor: pointer;
+	display: inline-block;
+	min-height: 500px;
+	position: relative;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		-webkit-transition: all 300ms ease;
+		-moz-transition: all 300ms ease;
+		-ms-transition: all 300ms ease;
+		-o-transition: all 300ms ease;
+		transition: all 300ms ease;
+		background: inherit;
+	}
+
+	&:hover {
+
+		&::before {
+			width: calc(100% + 8px);
+			height: calc(100% + 12px);
+		}
+	}
+}
+
+.page-container {
+	visibility: hidden;
+
+	.section {
+		position: absolute;
+		height: 100vh;
+		width: 100vw;
+		top: 0;
+		left: 0;
+		position: fixed;
+		z-index: 9;
+	}
+}

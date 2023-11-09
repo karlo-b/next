@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/content",
+		"title"      : "Content",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "",
+		"category"   : "gavdi-next",
+		"icon"       : "text-page",
+		"apiVersion" : 2,
+		"keywords"   : ["content"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "render.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

@@ -1,0 +1,9 @@
+
+.block-cta-link .icon{
+	flex: 0 0 auto!important;
+}
+@media only screen and (max-width: 480px) {
+	.block-cta-link .font-heading{
+		font-size: 32px!important;
+	}
+}

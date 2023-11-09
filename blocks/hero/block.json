@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/hero",
+		"title"      : "Hero",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "hero-script",
+		"category"   : "gavdi-next",
+		"icon"       : "fullscreen-alt",
+		"apiVersion" : 2,
+		"keywords"   : [],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "render.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

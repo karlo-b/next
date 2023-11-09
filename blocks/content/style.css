@@ -1,0 +1,24 @@
+.block-quote .quote a{
+		font-style: italic;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+}
+.block-quote .quote a::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 4px;
+	z-index: -1;
+	width: 100%;
+	height: 2px;
+	background-color: #E9E3E3;
+}
+.block-quote .quote a::after{
+	content:"";
+	width: 32px;
+	height: 33px;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='33' viewBox='0 0 32 33' fill='none'%3E%3Cpath d='M4 28L28 4' stroke='%237E6868' stroke-width='4'/%3E%3Cpath d='M8 2H30V24' stroke='%237E6868' stroke-width='4'/%3E%3C/svg%3E");
+	display: inline-block;
+	margin-top: 15px;
+}

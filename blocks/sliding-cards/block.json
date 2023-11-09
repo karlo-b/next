@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/sliding-cards",
+		"title"      : "Sliding Cards",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "sliding-cards-script",
+		"category"   : "gavdi-next",
+		"icon"       : "image-flip-vertical",
+		"apiVersion" : 2,
+		"keywords"   : ["sliding cards"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "render.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

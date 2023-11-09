@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/quote",
+		"title"      : "Quote",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "",
+		"category"   : "gavdi-next",
+		"icon"       : "format-quote",
+		"apiVersion" : 2,
+		"keywords"   : ["quote"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "render.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

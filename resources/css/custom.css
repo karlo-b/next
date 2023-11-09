@@ -1,0 +1,432 @@
+@font-face {
+	font-family: 'Eliza';
+	src: url('../fonts/Eliza-Regular.eot');
+	src: url('../fonts/Eliza-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eliza-Regular.woff2') format('woff2'),
+		url('../fonts/Eliza-Regular.woff') format('woff'),
+		url('../fonts/Eliza-Regular.ttf') format('truetype'),
+		url('../fonts/Eliza-Regular.svg#Eliza-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Eliza';
+	src: url('../fonts/Eliza-RegularItalic.eot');
+	src: url('../fonts/Eliza-RegularItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Eliza-RegularItalic.woff2') format('woff2'),
+		url('../fonts/Eliza-RegularItalic.woff') format('woff'),
+		url('../fonts/Eliza-RegularItalic.ttf') format('truetype'),
+		url('../fonts/Eliza-RegularItalic.svg#Eliza-RegularItalic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lausanne';
+	src: url('../fonts/Lausanne-Regular.eot');
+	src: url('../fonts/Lausanne-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lausanne-Regular.woff2') format('woff2'),
+		url('../fonts/Lausanne-Regular.woff') format('woff'),
+		url('../fonts/Lausanne-Regular.ttf') format('truetype'),
+		url('../fonts/Lausanne-Regular.svg#Lausanne-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Lausanne';
+	src: url('../fonts/Lausanne-Medium.eot');
+	src: url('../fonts/Lausanne-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lausanne-Medium.woff2') format('woff2'),
+		url('../fonts/Lausanne-Medium.woff') format('woff'),
+		url('../fonts/Lausanne-Medium.ttf') format('truetype'),
+		url('../fonts/Lausanne-Medium.svg#Lausanne-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+.container {
+	padding-left: 20px;
+	padding-right: 20px;
+
+	@media (min-width: theme('screens.lg')) {
+		padding-left: 44px;
+		padding-right: 44px;
+	}
+}
+
+img,
+svg {
+	max-width: 100%;
+}
+
+.viewport-height {
+	min-height: 100vh;
+}
+
+#site-header {
+	&.header--white {
+		.header-cta {
+			border: 1.5px solid#FF9D66;
+		}
+	}
+
+	.header-cta {
+		border: 1.5px solid#E9E3E3;
+		padding: 6px 7px;
+		font-weight: 500;
+	}
+}
+
+body {
+	font-family: 'Lausanne';
+	font-weight: 400;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 170%;
+	letter-spacing: 0.32px;
+}
+
+h1,
+.has-h-1-font-size,
+.h1 {
+	line-height: 110%;
+	font-family: 'Eliza';
+	font-weight: 400;
+	letter-spacing: -1.28px;
+	@apply lg:text-h1 text-[46px];
+}
+
+h2,
+.has-h-2-font-size,
+.h2 {
+	line-height: 110%;
+	font-family: 'Eliza';
+	font-weight: 400;
+	letter-spacing: -1.28px;
+	@apply lg:text-h2 text-[46px];
+}
+
+h3,
+.h3 {
+	line-height: 110%;
+	font-family: 'Eliza';
+	font-weight: 400;
+	letter-spacing: -1.28px;
+	@apply lg:text-h3 text-[36px];
+}
+
+h4,
+.text-h4 {
+	line-height: 110%;
+	font-family: 'Eliza';
+	font-weight: 400;
+	letter-spacing: -0.96px;
+	@apply lg:text-5xl text-[32px];
+}
+
+h5,
+.h5 {
+	line-height: 110%;
+	font-family: 'Eliza';
+	font-weight: 400;
+	@apply lg:text-[32px] text-[18px];
+}
+
+h6,
+.h6 {
+	line-height: 110%;
+	font-family: 'Eliza';
+	font-weight: 400;
+	@apply lg:text-h6 text-[18px];
+}
+
+.body-s {
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 170%;
+	letter-spacing: 0px;
+}
+
+.subheadline-l {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+}
+
+.subheadline-s {
+	font-style: normal;
+	font-weight: 500;
+	line-height: 150%;
+	@apply text-sm;
+}
+
+.introduction{
+	font-style: normal;
+	font-weight: 400;
+	line-height: 160%;
+	letter-spacing: 0.4px;
+	@apply lg:text-xl text-base;
+}
+
+.entry-content,
+.block-editor-block-list__layout {
+
+	p,
+	ul,
+	ol {
+		a {
+			@apply text-blue-500 underline;
+
+			&:hover {
+				@apply no-underline;
+			}
+		}
+
+		@apply mb-8;
+	}
+
+	ul:not(.block-editor-block-variation-picker__variations) {
+		li {
+			@apply list-disc list-inside;
+		}
+	}
+
+	ol {
+		li {
+			@apply list-decimal list-inside;
+		}
+	}
+}
+
+:where(.wp-block-group.has-background) {
+	padding: 0;
+}
+
+:where(body .is-layout-flex) {
+	gap: 15px;
+
+	@screen lg {
+		gap: 40px;
+	}
+}
+
+
+.tile {
+	cursor: pointer;
+	display: inline-block;
+	min-height: 355px;
+	position: relative;
+
+	@apply md:min-h-[500px];
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		height: 100%;
+		-webkit-transition: all 300ms ease;
+		-moz-transition: all 300ms ease;
+		-ms-transition: all 300ms ease;
+		-o-transition: all 300ms ease;
+		transition: all 300ms ease;
+		background: inherit;
+	}
+
+	&:hover {
+
+		&::before {
+			width: calc(100% + 8px);
+			height: calc(100% + 12px);
+		}
+	}
+}
+
+.page-container {
+	visibility: hidden;
+	.section {
+			position: absolute;
+			min-height: 100vh;
+			height: 100vh;
+			overflow-y: auto;
+			width: 100vw;
+			top: 0;
+			left: 0;
+			position: fixed;
+			z-index: 9;
+		}
+}
+
+
+
+
+.slideshow {
+	max-width: 100vw;
+	overflow: hidden;
+}
+
+.slide {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	width: 100%;
+	max-width: 218px;
+	margin-right: 46px;
+	@apply md:mr-[91px] md:max-w-[308px];
+}
+
+.overlay-hidden{
+	display: none !important;
+}
+.rotate-words {
+	display: inline;
+	padding-left: 15px;
+}
+
+.rotate-words span {
+	position: absolute;
+	opacity: 0;
+	font-weight: 400;
+	transition: color 0.25s ease-in-out;
+	animation: rotateWord 15s linear;
+
+	&:nth-child(2) {
+		animation-delay: 2s;
+	}
+
+	&:nth-child(3) {
+		animation-delay: 4s;
+	}
+}
+.rw-sentence{
+	animation: fadeAndMove 0.5s linear 6s forwards;
+}
+@keyframes fadeAndMove {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(-10px);
+		/* Adjust the distance for your desired effect */
+	}
+}
+
+@keyframes rotateWord {
+	0% {
+		opacity: 0;
+	}
+
+	2% {
+		opacity: 0;
+		transform: translateY(1rem);
+	}
+
+	5% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	17% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	20% {
+		opacity: 0;
+
+	}
+
+	80% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fadeout {
+	0% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+.fadeout {
+	animation: fadeout 0.5s linear forwards;
+}
+
+
+
+
+/* Animations*/
+body.animation-ready .animate-down {
+	opacity: 0;
+	transform: translateY(-50px);
+	transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+body.animation-ready .animate-down.on {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+body.animation-ready .animate-up {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+body.animation-ready .animate-up>.animate-up {
+	transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+body.animation-ready .animate-up~.animate-up {
+	transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+body.animation-ready .animate-up.on {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+body.animation-ready .animate-right {
+	opacity: 0;
+	transform: translateX(-50px);
+	transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+body.animation-ready .animate-right.on {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+body.animation-ready .animate-left {
+	opacity: 0;
+	transform: translateX(50px);
+	transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+body.animation-ready .animate-left.on {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+.footer-heading{
+	@apply text-[26px] md:text-[24px]
+}

@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/cta-link",
+		"title"      : "CTA Link",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "",
+		"category"   : "gavdi-next",
+		"icon"       : "megaphone",
+		"apiVersion" : 2,
+		"keywords"   : ["cta"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "render.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

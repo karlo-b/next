@@ -1,0 +1,196 @@
+{
+	"version": 1,
+	"settings": {
+		"layout": {
+			"contentSize": "1352px",
+			"wideSize": "1352px"
+		},
+		"blocks": {
+			"core/columns": {
+				"supports": {
+					"spacing": {
+						"blockGap": "40px"
+					}
+				}
+			}
+		},
+		"spacing": {
+			"margin": true,
+			"padding": true,
+			"blockGap": "4em",
+			"spacingSizes": [
+				{
+				"size": "40px",
+				"slug": "30",
+				"name": "1"
+				}
+			]
+		},
+		"color": {
+			"customGradient": false,
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{
+					"name": "Bordeaux",
+					"slug": "bordeaux",
+					"color": "#7C102A"
+				},
+				{
+					"name": "Bright Orange",
+					"slug": "bright-orange",
+					"color": "#FF5C01"
+				},
+				{
+					"name": "Dark Warm Grey",
+					"slug": "dark-warm-grey",
+					"color": "#7E6868"
+				},
+				{
+					"name": "Light Warm Grey",
+					"slug": "light-warm-grey",
+					"color": "#F2EDE9"
+				},
+				{
+					"name": "White",
+					"slug": "white",
+					"color": "#ffffff"
+				},
+				{
+					"name": "Bright Orange 700",
+					"slug": "bright-orange-700",
+					"color": "#FF9D66"
+				},
+				{
+					"name": "Bright Orange 500",
+					"slug": "bright-orange-500",
+					"color": "#FFBE99"
+				},
+				{
+					"name": "Bright Orange 300",
+					"slug": "bright-orange-300",
+					"color": "#FFDECC"
+				},
+				{
+					"name": "Bright Orange 100",
+					"slug": "bright-orange-100",
+					"color": "#FFEFE5"
+				},
+				{
+					"name": "Bordeaux 700",
+					"slug": "bordeaux-700",
+					"color": "#B0707F"
+				},
+				{
+					"name": "Bordeaux 500",
+					"slug": "bordeaux-500",
+					"color": "#CB9FAA"
+				},
+				{
+					"name": "Bordeaux 300",
+					"slug": "bordeaux-300",
+					"color": "#E5CFD4"
+				},
+				{
+					"name": "Bordeaux 100",
+					"slug": "bordeaux-100",
+					"color": "#F2E7EA"
+				},
+				{
+					"name": "Dark Warm Grey 700",
+					"slug": "dark-warm-grey-700",
+					"color": "#BCACAC"
+				},
+				{
+					"name": "Dark Warm Grey 500",
+					"slug": "dark-warm-grey-500",
+					"color": "#D3C7C7"
+				},
+				{
+					"name": "Dark Warm Grey 300",
+					"slug": "dark-warm-grey-300",
+					"color": "#E9E3E3"
+				},
+				{
+					"name": "Dark Warm Grey 100",
+					"slug": "dark-warm-grey-100",
+					"color": "#F4F1F1"
+				}
+			]
+		},
+		"typography": {
+			"fontSizes": [
+				{
+					"slug": "h1",
+					"name": "H1",
+					"size": "140px"
+				},
+				{
+					"slug": "h2",
+					"name": "H2",
+					"size": "88px"
+				},
+				{
+					"slug": "h3",
+					"name": "H3",
+					"size": "70px"
+				},
+				{
+					"slug": "h4",
+					"name": "H4",
+					"size": "48px"
+				},
+				{
+					"slug": "h5",
+					"name": "H5",
+					"size": "32px"
+				},
+				{
+					"slug": "h6",
+					"name": "H6",
+					"size": "24px"
+				},
+				{
+					"slug": "h7",
+					"name": "H7 - mini",
+					"size": "20px"
+				},
+				{
+					"slug": "subheadline-l",
+					"name": "Sub Headline - L",
+					"size": "16px"
+				},
+				{
+					"slug": "subheadline-s",
+					"name": "Sub Headline - S",
+					"size": "14px"
+				},
+				{
+					"slug": "label-mini",
+					"name": "Label Mini",
+					"size": "12px"
+				},
+				{
+					"slug": "introduction",
+					"name": "Introduction",
+					"size": "20px"
+				},
+				{
+					"slug": "body-l",
+					"name": "Body L",
+					"size": "16px"
+				},
+				{
+					"slug": "body-s",
+					"name": "Body S",
+					"size": "12px"
+				},
+				{
+					"slug": "text-list",
+					"name": "Text List",
+					"size": "16px"
+				}
+			]
+		}
+	}
+}

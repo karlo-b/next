@@ -1,0 +1,13 @@
+alignfull
+alignwide
+alignnone
+aligncenter
+alignright
+wp-block-button
+wp-caption
+wp-caption-text
+items-end
+bg-bright-orange
+bg-bordeaux
+bg-light-warm-grey
+bg-dark-warm-grey
