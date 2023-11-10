@@ -15,7 +15,7 @@
 		var initializeBlock = function( $block ) {
 		
 		
-			let tickerSpeed = 2;
+			let tickerSpeed = 1.5;
 
 			let flickity = null;
 			let isPaused = false;
@@ -49,11 +49,10 @@
 				autoPlay: false,
 				prevNextButtons: true,
 				pageDots: false,
-				draggable: false,
+				draggable: true,
 				wrapAround: true,
 				prevNextButtons: false,
-				selectedAttraction: 0.1,
-				friction: 0.1
+				accessibility: false
 				});
 			flickity.x = 0;
 			
@@ -91,6 +90,10 @@
 					play();
 				}
 			}, false);
+
+			flickity.on('dragStart', () => {
+				isPaused = true;
+			});
 
 			// slideshowEl.addEventListener('mouseenter', pause, false);
 			// slideshowEl.addEventListener('focusin', pause, false);

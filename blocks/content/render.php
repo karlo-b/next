@@ -55,7 +55,7 @@ $block_class .= ! empty( $block['align'] ) ? ' align' . sanitize_key( $block['al
 							<p class="body-s">Uphold a commitment to rigorous testing and best practices to deliver SAP solutions with the highest quality. Quality assurance efforts reduce</p>
 						</div>
 						<div class="col-span-2">
-							<a class="font-medium text-sm inline-flex gap-x-[8px] items-center py-[5px] border-b-2 border-dark-warm-grey-300" href="#">
+							<a class="font-medium text-sm inline-flex gap-x-[8px] items-center py-[5px] border-b-2 hover:border-dark-warm-grey-700 transition-all border-dark-warm-grey-300" href="#">
 								<span>Read about our values</span>
 								<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
 								<path d="M1 9L9 1" stroke="#7E6868" stroke-width="1.5"/>

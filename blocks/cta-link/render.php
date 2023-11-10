@@ -21,7 +21,7 @@ $block_class .= ! empty( $block['align'] ) ? ' align' . sanitize_key( $block['al
 ?>
 <div id="<?php echo esc_attr( $block_id ); ?>" class="<?= esc_attr( $block_class )?> my-[60px] lg:my-[120px]">
 	<div class="container">
-		<div class="p-[30px] lg:py-[60px] lg:px-[50px] border border-dark-warm-grey">
+		<div class="p-[30px] lg:py-[60px] lg:px-[50px] border hover:border-dark-warm-grey :border-dark-warm-grey-300 transition-all">
 			<a class="flex items-center text-dark-warm-grey justify-between" href="#">
 				<span class="h2 font-heading">Read news on Linkedin</span>
 				<div class="icon flex justify-end">
