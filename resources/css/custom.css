@@ -50,6 +50,14 @@
 	font-display: swap;
 }
 
+body{
+	position: relative;
+	overscroll-behavior: none;
+}
+.flickity-slider {
+	transform: translateZ(0);
+}
+
 .container {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -355,7 +363,6 @@ h6,
 	max-width: 100vw;
 	overflow: hidden;
 }
-
 .slide {
 	margin-top: 8px;
 	margin-bottom: 8px;

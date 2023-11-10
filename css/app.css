@@ -3305,6 +3305,13 @@ video {
 	font-style: normal;
 	font-display: swap;
 }
+body{
+	position: relative;
+	overscroll-behavior: none;
+}
+.flickity-slider {
+	transform: translateZ(0);
+}
 .container {
 	padding-left: 20px;
 	padding-right: 20px;

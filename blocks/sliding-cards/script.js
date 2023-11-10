@@ -47,12 +47,12 @@
 
 			flickity = new Flickity(slideshowEl, {
 				autoPlay: false,
-				prevNextButtons: true,
-				pageDots: false,
 				draggable: true,
 				wrapAround: true,
 				prevNextButtons: false,
-				accessibility: false
+				accessibility: false,
+					 friction: 0.2,
+					freeScroll: true,
 				});
 			flickity.x = 0;
 			
@@ -93,6 +93,13 @@
 
 			flickity.on('dragStart', () => {
 				isPaused = true;
+				flickity.slider.style.pointerEvents = 'none';
+			});
+
+			flickity.on('dragEnd', () => {
+				flickity.slider.style.pointerEvents = 'auto';
+				play();
+				update();
 			});
 
 			// slideshowEl.addEventListener('mouseenter', pause, false);
@@ -104,7 +111,7 @@
 
 
 			$('.slide').on('click', function(){
-				pause();
+				//pause();
 			});
 
 		}

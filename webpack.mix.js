@@ -23,7 +23,8 @@ mix.browserSync({
     proxy: 'http://next.local/',
     host: 'next.local',
     open: 'external',
-    port: 8000
+    port: 8000,
+		tunnel: true,
 });
 
 if (mix.inProduction()) {
