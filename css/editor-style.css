@@ -1303,9 +1303,6 @@
 .h-screen {
 	height: 100vh;
 }
-.min-h-\[600px\] {
-	min-height: 600px;
-}
 .min-h-full {
 	min-height: 100%;
 }

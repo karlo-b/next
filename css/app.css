@@ -1776,9 +1776,6 @@ video {
 .h-screen{
 	height: 100vh;
 }
-.min-h-\[600px\]{
-	min-height: 600px;
-}
 .min-h-full{
 	min-height: 100%;
 }
@@ -3305,9 +3302,13 @@ video {
 	font-style: normal;
 	font-display: swap;
 }
+html{
+	overflow-x: clip!important;
+}
 body{
 	position: relative;
 	overscroll-behavior: none;
+	overflow-x: clip!important;
 }
 .flickity-slider {
 	transform: translateZ(0);
@@ -3637,16 +3638,16 @@ h6,
 	opacity: 0;
 	font-weight: 400;
 	transition: color 0.25s ease-in-out;
-	animation: rotateWord 15s linear;
+	animation: rotateWord 8s linear;
 }
 .rotate-words span:nth-child(2) {
-		animation-delay: 2s;
+		animation-delay: 1.5s;
 	}
 .rotate-words span:nth-child(3) {
-		animation-delay: 4s;
+		animation-delay: 3s;
 	}
 .rw-sentence{
-	animation: fadeAndMove 0.5s linear 6s forwards;
+	animation: fadeAndMove 0.5s linear 4s forwards;
 }
 @keyframes fadeAndMove {
 	0% {
@@ -3681,8 +3682,11 @@ h6,
 	}
 
 	20% {
+		opacity: .1;
+		transform: translateY(-1rem);
+	}
+	30% {
 		opacity: 0;
-
 	}
 
 	80% {
@@ -3691,6 +3695,7 @@ h6,
 
 	100% {
 		opacity: 0;
+	
 	}
 }
 @keyframes fadeout {
@@ -3700,6 +3705,7 @@ h6,
 
 	100% {
 		opacity: 0;
+		transform: translateY(-1rem);
 	}
 }
 .fadeout {

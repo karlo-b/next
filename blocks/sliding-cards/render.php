@@ -18,8 +18,7 @@ $block_class .= ! empty( $block['align'] ) ? ' align' . sanitize_key( $block['al
 
 $select_services = (!empty(get_field( 'select_services' ) ) ) ? get_field( 'select_services' ) : '';
 ?>
-
-<div id="<?php echo esc_attr( $block_id ); ?>" class="<?= esc_attr( $block_class )?> mt-20 mb-20 lg:mt-40 lg:mb-[120px] min-h-[600px] overflow-hidden bg-white">
+<div id="<?php echo esc_attr( $block_id ); ?>" class="<?= esc_attr( $block_class )?> mt-20 mb-20 lg:mt-40 lg:mb-[120px] overflow-hidden bg-white">
 	<div class="container mx-auto px-0 md:px-0">
 		<?php if ($select_services ){ ?>
 			<div class="slideshow js-slideshow">
