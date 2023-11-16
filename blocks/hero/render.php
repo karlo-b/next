@@ -43,9 +43,9 @@ $heading        = get_field( 'heading' ) ? : get_the_title();
 				<div class="sticky bottom-[44px] left-0 right-0 w-full">
 					<div class="border border-bright-orange-700 hover:border-white transition-all p-5 flex gap-x-5 md:max-w-[376px] justify-between animate animate-up">
 						<div>
-							<h3 class="h6 text-white mb-[15px]">Check out our new rapport on SAS</h3>
-							<a class="text-white text-sm font-medium flex items-center gap-x-[5px]" href="">
-								Download rapport
+							<h3 class="h6 text-white mb-[15px]">Do you want to know more?</h3>
+							<a href="/contact" class="text-white text-sm font-medium flex items-center gap-x-[5px]" href="">
+								Book a meeting
 								<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
 								<path d="M1 10H11" stroke="white" stroke-width="1.5"/>
 								<path d="M10.5 2L6 6L1.5 2" stroke="white" stroke-width="1.5"/>
@@ -57,12 +57,12 @@ $heading        = get_field( 'heading' ) ? : get_the_title();
 				</div>
 			</div>
 			<div class="col-span-12 md:col-span-6 min-h-screen md:min-h-screen flex items-end lg:pb-11 order-0 md:order-2 pb-[15px] md:pb-0">
-				<h1 class="h2 text-white animate animate-up">Delivering Award Winning Workforce Management Solutions</h1>
+				<h1 class="h2 text-white animate animate-up">Delivering High-end SAP S/4HANA Solutions and Services</h1>
 			</div>
 			<div class="col-span-12 md:col-start-7 md:col-end-13 lg:py-[120px] order-3 mt-8 pb-24">
 				<div class="text-white introduction lg:pr-[30px] mb-10">
-					<p>We believe the way we advance digital today is imperative to ensuring a more open, resilient, and optimistic world. For 20 years, we’ve dedicated ourselves to creating lasting value with our partners.</p>
-					<p>By crafting brands and products that are fundamental to our interactions as people, we can make the internet an enhancement of our lives, not a distraction from it.</p>
+					<p>We believe the way we advance digital today is imperative to ensuring a more open, resilient, and optimistic world. For more than 20 years, we’ve dedicated ourselves to implement high-end sustainable IT-solutions based on SAP technology.</p>
+					<p>An open and honest mindset are fundamental in our dialogue as people - we are easy to do business with.</p>
 				</div>
 				<div class="mb-10">
 					<a class="flex text-white h5 justify-between w-full items-center  pt-[10px] md:pt-[17px] pb-[30px] md:pb-10 border-t hover:border-white transition-all border-bright-orange-700" href="#link">

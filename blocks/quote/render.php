@@ -29,12 +29,12 @@ $block_class .= ! empty( $block['align'] ) ? ' align' . sanitize_key( $block['al
 					</svg>
 				</div>
 				<div class="my-10 lg:my-[70px] text-dark-warm-grey quote text-center font-heading text-[28px] lg:text-[66px] leading-[110%]">
-				“Gavdi’s expertise and ongoing support is enabling <a>VR Group</a> to get the greatest value out of our SAP <a>SuccessFactors</a> investment”
+				“Gavdi’s expertise and ongoing support is enabling <a href="https://www.vrgroup.fi/en/">VR Group</a> to get the greatest value out of our SAP investment”
 				</div>
 				<div class="flex flex-col items-center">
-					<img class="w-[50px] h-[63px] mb-5" src="<?=get_stylesheet_directory_uri()?>/images/author.jpg" alt="author">
+					<img class="w-[50px] h-[63px] mb-5" src="<?=get_stylesheet_directory_uri()?>/images/heini_toivonen.png" alt="Heini Toivonen">
 					<h4 class="text-dark-warm-grey font-medium text-sm">Heini Toivonen</h4>
-					<span class="text-dark-warm-grey-700 text-sm">Vice President of HR</span>
+					<span class="text-dark-warm-grey-700 text-sm">Vicepresident of HR</span>
 				</div>
 			</div>
 		</div>

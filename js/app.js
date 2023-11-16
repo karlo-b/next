@@ -88,6 +88,7 @@ window.addEventListener('load', function () {
       tile.classList.add("open");
       page.classList.add("open");
       document.body.style.overflowY = 'hidden';
+      document.body.classList.add('service-open');
       document.documentElement.style.overflow = 'hidden';
     });
 
@@ -127,6 +128,7 @@ window.addEventListener('load', function () {
       openTile.classList.remove("open");
       openPage.classList.remove("open");
       document.body.style.overflowY = 'visible';
+      document.body.classList.remove('service-open');
       document.documentElement.style.overflow = 'visible';
       if (document.body.classList.contains("dark-nav")) {
         document.body.classList.remove("dark-nav");
@@ -192,6 +194,7 @@ window.addEventListener('load', function () {
   var animateElements = parentElement.querySelectorAll('.animate');
   if (fullscreenSection) {
     document.body.style.overflowY = 'hidden';
+    document.body.classList.add('service-open');
     document.documentElement.style.overflow = 'hidden';
     document.getElementById("site-header").classList.remove("on");
     animateElements.forEach(function (element) {
@@ -209,6 +212,7 @@ window.addEventListener('load', function () {
       document.cookie = "fullscreen-loaded=true; expires=" + expirationDate.toUTCString() + "; path=/";
       document.getElementById("site-header").classList.add("on");
       document.body.style.overflowY = 'visible';
+      document.body.classList.remove('service-open');
       document.documentElement.style.overflow = 'visible';
       animateElements.forEach(function (element) {
         element.classList.add('on');

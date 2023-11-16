@@ -51,11 +51,13 @@
 }
 html{
 	overflow-x: clip!important;
+	scrollbar-gutter: stable;
 }
 body{
 	position: relative;
 	overscroll-behavior: none;
 	overflow-x: clip!important;
+	scrollbar-gutter: stable;
 }
 .flickity-slider {
 	transform: translateZ(0);
@@ -288,14 +290,15 @@ h6,
 	}
 
 	ul:not(.block-editor-block-variation-picker__variations) {
+		margin-left: 12px;
 		li {
-			@apply list-disc list-inside;
+			@apply list-disc list-outside;
 		}
 	}
 
 	ol {
 		li {
-			@apply list-decimal list-inside;
+			@apply list-decimal list-outside;
 		}
 	}
 }
@@ -352,10 +355,21 @@ h6,
 			height: 100vh;
 			overflow-y: auto;
 			width: 100vw;
+			
 			top: 0;
 			left: 0;
 			position: fixed;
 			z-index: 9;
+		
+			.card--content{
+				max-width: calc(100vw - 104px);
+				ul{
+					@apply list-disc list-outside
+				}
+				@media only screen and (max-width: 768px) {
+						max-width: calc(100vw - 56px);
+					}
+			}
 		}
 }
 

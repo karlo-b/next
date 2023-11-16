@@ -23,7 +23,7 @@ $block_class .= ! empty( $block['align'] ) ? ' align' . sanitize_key( $block['al
 	<div class="container">
 		<div class="p-[30px] lg:py-[60px] lg:px-[50px] border hover:border-dark-warm-grey :border-dark-warm-grey-300 transition-all">
 			<a class="flex items-center text-dark-warm-grey justify-between" href="#">
-				<span class="h2 font-heading">Read news on Linkedin</span>
+				<span class="h2 font-heading lg:text-[62px]">Read news on Linkedin</span>
 				<div class="icon flex justify-end">
 					<svg class="w-[30px] h-[76px]"  xmlns="http://www.w3.org/2000/svg" width="26" height="43" viewBox="0 0 26 43" fill="none">
 					<path d="M1.75 2.5L22.25 21.5L1.75 40.5" stroke="#7E6868" stroke-width="5"/>

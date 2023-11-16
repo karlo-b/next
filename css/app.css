@@ -1825,11 +1825,17 @@ video {
 .cursor-pointer{
 	cursor: pointer;
 }
+.list-outside{
+	list-style-position: outside;
+}
 .list-decimal{
 	list-style-type: decimal;
 }
 .list-disc{
 	list-style-type: disc;
+}
+.grid-cols-1{
+	grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .grid-cols-12{
 	grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -1910,6 +1916,10 @@ video {
 .border-dark-warm-grey-300{
 	--tw-border-opacity: 1;
 	border-color: rgb(233 227 227 / var(--tw-border-opacity));
+}
+.border-dark-warm-grey-700{
+	--tw-border-opacity: 1;
+	border-color: rgb(188 172 172 / var(--tw-border-opacity));
 }
 .bg-bordeaux{
 	--tw-bg-opacity: 1;
@@ -3304,11 +3314,13 @@ video {
 }
 html{
 	overflow-x: clip!important;
+	scrollbar-gutter: stable;
 }
 body{
 	position: relative;
 	overscroll-behavior: none;
 	overflow-x: clip!important;
+	scrollbar-gutter: stable;
 }
 .flickity-slider {
 	transform: translateZ(0);
@@ -3545,12 +3557,15 @@ h6,
 	.block-editor-block-list__layout ol{
 	margin-bottom: 1rem;
 }
+.entry-content ul:not(.block-editor-block-variation-picker__variations), .block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) {
+		margin-left: 12px;
+	}
 .entry-content ul:not(.block-editor-block-variation-picker__variations) li, .block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li{
-	list-style-position: inside;
+	list-style-position: outside;
 	list-style-type: disc;
 }
 .entry-content ol li, .block-editor-block-list__layout ol li{
-	list-style-position: inside;
+	list-style-position: outside;
 	list-style-type: decimal;
 }
 :where(.wp-block-group.has-background) {
@@ -3598,11 +3613,24 @@ h6,
 			height: 100vh;
 			overflow-y: auto;
 			width: 100vw;
+			
 			top: 0;
 			left: 0;
 			position: fixed;
 			z-index: 9;
 		}
+.page-container .section .card--content{
+				max-width: calc(100vw - 104px);
+			}
+.page-container .section .card--content ul{
+	list-style-position: outside;
+	list-style-type: disc;
+}
+@media only screen and (max-width: 768px) {
+.page-container .section .card--content{
+						max-width: calc(100vw - 56px)
+			}
+					}
 .slideshow {
 	max-width: 100vw;
 	overflow: hidden;
@@ -8286,10 +8314,6 @@ body.animation-ready .animate-left.on {
 		     column-gap: 2.5rem;
 	}
 
-	.md\:gap-y-5{
-		row-gap: 1.25rem;
-	}
-
 	.md\:p-0{
 		padding: 0px;
 	}
@@ -12819,6 +12843,10 @@ body.animation-ready .animate-left.on {
 
 	.lg\:text-\[32px\]{
 		font-size: 32px;
+	}
+
+	.lg\:text-\[62px\]{
+		font-size: 62px;
 	}
 
 	.lg\:text-\[66px\]{

@@ -80,15 +80,15 @@
 				</svg>
 			</div>
 			<div class="col-span-12 lg:col-span-6 flex flex-col gap-y-[10px] md:flex-row justify-center mt-[10px] md:mt-0 lg:justify-end lg:mb-8 text-dark-warm-grey items-center gap-x-[10px] text-sm">
-				<a href="">Cookies policty</a>
+				<a href="">Cookie policy</a>
 				<svg class="hidden md:inline-flex" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect y="0.5" width="1" height="8" fill="#D9D9D9"/>
 				</svg>
-				<span>Cvr: 81726593</span>
+				<span>Cvr: 00 00 00 00</span>
 				<svg class="hidden md:inline-flex" width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<rect y="0.5" width="1" height="8" fill="#D9D9D9"/>
 				</svg>
-				<span>© 2022 - <?php echo date_i18n( 'Y' );?> Gavdi Group</span>
+				<span>© Gavdi Next</span>
 			</div>
 		</div>
 	</div>
