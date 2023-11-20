@@ -41,7 +41,7 @@
 						)
 					);
 					?>
-					<a id="header-contact" href="/contact-us" class="header-cta hidden lg:block font-medium text-sm text-dark-warm-grey group-[.header--white]:text-white"><?=__('Contact us', 'gavdi_next')?></a>
+					<a id="header-contact" href="<?=get_bloginfo('url')?>/contact-us" class="header-cta hidden lg:block font-medium text-sm text-dark-warm-grey group-[.header--white]:text-white"><?=__('Contact us', 'gavdi_next')?></a>
 					<a id="overlay-close" href="javascript:void(0)" class="header-cta font-medium text-sm hidden text-dark-warm-grey group-[.header--white]:text-white"><?=__('Close', 'gavdi_next')?></a>
 					<div class="lg:hidden relative z-[6]">
 						<a href="#" class="text-dark-warm-grey group-[.header--white]:text-white" aria-label="Toggle navigation" id="primary-menu-toggle">
