@@ -190,9 +190,27 @@ window.addEventListener('load', function () {
 });
 window.addEventListener('load', function () {
   var fullscreenSection = document.getElementById('fullscreen-section');
-  var parentElement = document.querySelector('.block-hero');
-  var animateElements = parentElement.querySelectorAll('.animate');
   if (fullscreenSection) {
+    var hideFullscreenSection = function hideFullscreenSection() {
+      var fullscreenSection = document.getElementById('fullscreen-section');
+      var parentElement = document.querySelector('.block-hero');
+      var animateElements = parentElement.querySelectorAll('.animate');
+      if (fullscreenSection) {
+        fullscreenSection.classList.add('fadeout');
+        var expirationDate = new Date();
+        expirationDate.setDate(expirationDate.getDate() + 7);
+        document.cookie = "fullscreen-loaded=true; expires=" + expirationDate.toUTCString() + "; path=/";
+        document.getElementById("site-header").classList.add("on");
+        document.body.style.overflowY = 'visible';
+        document.body.classList.remove('service-open');
+        document.documentElement.style.overflow = 'visible';
+        animateElements.forEach(function (element) {
+          element.classList.add('on');
+        });
+      }
+    }; // Call the hideFullscreenSection function after 8 seconds (8000 milliseconds)
+    var parentElement = document.querySelector('.block-hero');
+    var animateElements = parentElement.querySelectorAll('.animate');
     document.body.style.overflowY = 'hidden';
     document.body.classList.add('service-open');
     document.documentElement.style.overflow = 'hidden';
@@ -200,27 +218,8 @@ window.addEventListener('load', function () {
     animateElements.forEach(function (element) {
       element.classList.remove('on');
     });
+    setTimeout(hideFullscreenSection, 5000);
   }
-  function hideFullscreenSection() {
-    var fullscreenSection = document.getElementById('fullscreen-section');
-    var parentElement = document.querySelector('.block-hero');
-    var animateElements = parentElement.querySelectorAll('.animate');
-    if (fullscreenSection) {
-      fullscreenSection.classList.add('fadeout');
-      var expirationDate = new Date();
-      expirationDate.setDate(expirationDate.getDate() + 7);
-      document.cookie = "fullscreen-loaded=true; expires=" + expirationDate.toUTCString() + "; path=/";
-      document.getElementById("site-header").classList.add("on");
-      document.body.style.overflowY = 'visible';
-      document.body.classList.remove('service-open');
-      document.documentElement.style.overflow = 'visible';
-      animateElements.forEach(function (element) {
-        element.classList.add('on');
-      });
-    }
-  }
-  // Call the hideFullscreenSection function after 8 seconds (8000 milliseconds)
-  setTimeout(hideFullscreenSection, 5000);
 });
 
 // Animations
@@ -247,9 +246,10 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function () {
   var scrollPosition = window.scrollY;
   var fadingElement = document.getElementById('hero-graphic');
-
-  // Adjust the opacity based on scroll position
-  fadingElement.style.opacity = 1 - scrollPosition / 500;
+  if (fadingElement) {
+    // Adjust the opacity based on scroll position
+    fadingElement.style.opacity = 1 - scrollPosition / 500;
+  }
 });
 
 /***/ }),

@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/slider-gallery",
+		"title"      : "Slider Gallery",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "slider-gallery-script",
+		"category"   : "gavdi-next",
+		"icon"       : "format-gallery",
+		"apiVersion" : 2,
+		"keywords"   : ["slider", "gallery"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "slider-gallery.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

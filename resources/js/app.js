@@ -193,10 +193,12 @@ window.addEventListener('load', function () {
 window.addEventListener('load', function () {
 
 	var fullscreenSection = document.getElementById('fullscreen-section');
-	var parentElement = document.querySelector('.block-hero');
-	var animateElements = parentElement.querySelectorAll('.animate');
+	
 	
 	if (fullscreenSection) {
+		var parentElement = document.querySelector('.block-hero');
+		var animateElements = parentElement.querySelectorAll('.animate');
+
 		document.body.style.overflowY = 'hidden';
 		document.body.classList.add('service-open');
 		document.documentElement.style.overflow = 'hidden';
@@ -204,7 +206,7 @@ window.addEventListener('load', function () {
 		 animateElements.forEach(function(element) {
 				element.classList.remove('on');
 		});
-	}
+	
 	function hideFullscreenSection() {
 		var fullscreenSection = document.getElementById('fullscreen-section');
 		var parentElement = document.querySelector('.block-hero');
@@ -223,8 +225,10 @@ window.addEventListener('load', function () {
 			});
 		}
 	}
+	
 	// Call the hideFullscreenSection function after 8 seconds (8000 milliseconds)
 	setTimeout(hideFullscreenSection, 5000);
+	}
 });
 
 // Animations
@@ -252,7 +256,9 @@ window.addEventListener('scroll', function () {
 window.addEventListener('scroll', function() {
 		var scrollPosition = window.scrollY;
 		var fadingElement = document.getElementById('hero-graphic');
-
-		// Adjust the opacity based on scroll position
-		fadingElement.style.opacity = 1 - (scrollPosition / 500);
+		if(fadingElement){
+			// Adjust the opacity based on scroll position
+			fadingElement.style.opacity = 1 - (scrollPosition / 500);
+		}
 });
+

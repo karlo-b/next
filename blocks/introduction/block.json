@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/end-contact",
+		"title"      : "End Contact",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "",
+		"category"   : "gavdi-next",
+		"icon"       : "phone",
+		"apiVersion" : 2,
+		"keywords"   : ["contact"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "introduction.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

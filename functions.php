@@ -52,6 +52,12 @@ function gavdi_next_enqueue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'gavdi_next_enqueue_scripts' );
 
+
+
+
+add_image_size( 'news-card', 172, 172, true );
+add_image_size( 'quote-author', 100, 126, true );
+add_image_size( 'hero-articles', 512, 662, true );
 /**
  * Get asset path.
  *

@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/introduction",
+		"title"      : "Introduction",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "",
+		"category"   : "gavdi-next",
+		"icon"       : "text",
+		"apiVersion" : 2,
+		"keywords"   : ["introduction"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "introduction.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

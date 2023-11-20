@@ -11,3 +11,9 @@ bg-bright-orange
 bg-bordeaux
 bg-light-warm-grey
 bg-dark-warm-grey
+border-dark-warm-grey-700
+border-bordeaux-700
+border-bright-orange-700
+border-dark-warm-grey-300
+border-bright-orange-300
+border-bordeaux-300

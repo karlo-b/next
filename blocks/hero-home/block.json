@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/hero-home",
+		"title"      : "Hero Home",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "",
+		"category"   : "gavdi-next",
+		"icon"       : "fullscreen-alt",
+		"apiVersion" : 2,
+		"keywords"   : [],
+		"acf"        : {
+	"mode"          : "preview",
+	"renderTemplate": "hero-home.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

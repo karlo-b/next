@@ -1,0 +1,30 @@
+{
+		"name"       : "gavdi-next/text-2col",
+		"title"      : "Text 2 Col",
+		"description": "",
+		"style": "file:./style.css",
+		"script"     : "",
+		"category"   : "gavdi-next",
+		"icon"       : "text",
+		"apiVersion" : 2,
+		"keywords"   : ["text"],
+		"acf"        : {
+	"mode"          : "auto",
+	"renderTemplate": "text-2col.php"
+		},
+		"styles"  : [],
+		"supports": {
+				"align"       : false,
+				"anchor"      : true,
+				"alignContent": false,
+				"color"       : {
+						"text"      : false,
+						"background": false,
+						"link"      : false
+				},
+				"alignText" : false,
+				"fullHeight": false
+		},
+		"attributes": {
+		}
+}

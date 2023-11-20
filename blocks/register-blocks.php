@@ -86,6 +86,7 @@ add_filter( 'block_categories_all', 'block_categories' );
  */
 function gavdi_next_register_block_script() {
 	wp_register_script( 'sliding-cards-script', get_template_directory_uri() . '/blocks/sliding-cards/script.js', [ 'slick-slider', 'acf' ] );
-	}
+	wp_register_script( 'slider-gallery-script', get_template_directory_uri() . '/blocks/slider-gallery/script.js', [ 'slick-slider', 'acf' ] );
+}
 add_action( 'init', 'gavdi_next_register_block_script' );
 
